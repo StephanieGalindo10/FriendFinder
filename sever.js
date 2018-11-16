@@ -5,7 +5,7 @@ var path = require('path')
 // Create an instance of express server//
 var app = express();
 
-///var port will be 3000///
+///var port will be 3000(Local Host)///
 var PORT = process.env.PORT || 3000;
 
 ///create a application//
@@ -16,7 +16,7 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 
 // Sets up the Express App contuine// Routes information//
-// =============================================================
+// =============================================================//
 
 require('./app/routing/api-routes.js')(app); 
 require('./app/routing/html-routes.js')(app);
