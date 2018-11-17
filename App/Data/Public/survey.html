@@ -8,7 +8,7 @@
 			<!-- materialize -->
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 
-			
+			<link rel="stylesheet" type="text/css" href="css/style.css">
 			<!--Let browser know website is optimized for mobile-->
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			   <!-- jQuery -->
@@ -22,7 +22,7 @@
 			
 				<body background="https://i.gifer.com/Pido.gif">
 			<div class='container'>
-				<div class='card-panel  blue darken-1 col s11 center-align'>
+				<div class='card-panel  grey darken-1 col s11 center-align'>
 
 					<h2>Lets find a friend</h2>
 
@@ -136,7 +136,7 @@
 						</select>
 						<br>
 						 
-						<button type ="submit" data-target="modal1"  class="waves-effect waves-light btn modal-trigger cyan lighten-1" id="submitBtn">Submit</button>
+						<button type ="submit" data-target="modal1"  class="waves-effect waves-light btn modal-trigger red lighten-1" id="submitBtn">Submit</button>
 					</div>
 				</div>
 			   
@@ -155,7 +155,7 @@
 		
 			</div>
 		
-		///Server///
+
 		<script type="text/javascript">
 		$(document).ready(function() {
 			$("#submitBtn").on("click", function() {
@@ -195,9 +195,9 @@
 					};
 					
 					var currentURL = window.location.origin;
-					//AJAX posts the data to friends API.
+				
 					$.post(currentURL + "/api/friends", newFriend, function(data) {
-						//Grab the result from the AJAX post so that the best match's name and photo are displayed.
+						
 						$("#matchName").text(data.name);
 						$("#matchPic").attr("src", data.profilePic);
 					});
