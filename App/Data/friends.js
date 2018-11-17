@@ -1,10 +1,10 @@
-//friends.js arrays//
+//friends.js arrays and score count //
 
 
 var friendList = [
     {
       name: 'Stephanie Galindo',
-      profilePic: img src="desktop" alt="profile">
+      profileimage: img src="desktop" alt="profile">
       scores: [
         "4",
         "5",
