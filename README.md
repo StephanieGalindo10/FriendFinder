@@ -4,7 +4,7 @@ Node and Express Servers
 live link https://friendfinderapplications.herokuapp.com/
 
 
-https://raw.githubusercontent.com/StephanieGalindo10/FriendFinder/master/App/public/assets/images/friendfinder.png
+![alt text] (https://raw.githubusercontent.com/StephanieGalindo10/FriendFinder/master/App/public/assets/images/friendfinder.png)
 
 ### Overview
 
