@@ -1,5 +1,5 @@
 {
-  "name": "FriendFinder",
+  "name": "friendfinder",
   "version": "1.0.0",
   "description": "Node and Express Servers",
   "main": "server.js",
@@ -20,6 +20,9 @@
   "homepage": "https://github.com/StephanieGalindo10/FriendFinder#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
-  }
+    "express": "^4.16.4",
+    "git-init": "^1.0.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {}
 }
