@@ -24,5 +24,8 @@
     "git-init": "^1.0.0",
     "mysql": "^2.16.0"
   },
+  "engines": {
+    "node": "8.12.0"
+  },
   "devDependencies": {}
 }
