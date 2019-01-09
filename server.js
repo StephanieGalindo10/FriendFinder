@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, '/app/public')));
 
 ///var port will be 3000(Local Host)///
 var PORT = process.env.PORT || 3000;
-
+console.log("In Server!!! ______")
 ///create a application//
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
