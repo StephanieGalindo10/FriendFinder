@@ -5,7 +5,7 @@ module.exports = function(app) {
 
 	// Show all friends available
 	app.get('/api/friends', function(req, res) {
-		
+		res.send(friends);
 	});
 
 	app.post('/api/friends', function(req, res) {
