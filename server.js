@@ -20,8 +20,8 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 // Sets up the Express App contuine// Routes information//
 // =============================================================//
 
-require('./app/routing/api-routes.js')(app); 
-require('./app/routing/html-routes.js')(app);
+require('app/routing/api-routes.js')(app); 
+require('app/routing/html-routes.js')(app);
 
 // Our Start Sever//
 app.listen(PORT, function() {
