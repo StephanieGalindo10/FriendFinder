@@ -1,8 +1,14 @@
 {
-  "name": "friendfinder",
+  "name": "FriendFinder",
   "version": "1.0.0",
   "description": "Node and Express Servers",
   "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -17,15 +23,5 @@
   "bugs": {
     "url": "https://github.com/StephanieGalindo10/FriendFinder/issues"
   },
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "git-init": "^1.0.0",
-    "mysql": "^2.16.0"
-  },
-  "engines": {
-    "node": "8.12.0",
-    "npm": "6.4.1"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/StephanieGalindo10/FriendFinder#readme"
 }
