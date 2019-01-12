@@ -17,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/StephanieGalindo10/FriendFinder/issues"
   },
-  "homepage": "https://github.com/StephanieGalindo10/FriendFinder#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
