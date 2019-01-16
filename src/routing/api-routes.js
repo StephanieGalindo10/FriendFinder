@@ -7,9 +7,11 @@ module.exports = function(app) {
 	app.get('/api/friends', function(req, res) {
 		res.send(friends);
 	});
+
 	app.get('/', function(req, res){
-		res.redirect('/friends');
+		res.redirect('/api/friends');
 	 });
+
 
 	app.post('/api/friends', function(req, res) {
 		// closest match object.
