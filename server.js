@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
-
+app.use(express.static(path.join(__dirname, '/src/public')));
 /// issues with server.js and heroku link ///
 ///check dependencies
 
