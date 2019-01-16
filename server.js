@@ -19,8 +19,8 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 /// issues with server.js and heroku link ///
 ///check dependencies
 
-require('./api-routes')(app);
-require('./html-routes')(app); 
+require('./src/routing/api-routes')(app);
+require('./src/routing/html-routes')(app); 
 
 
 
