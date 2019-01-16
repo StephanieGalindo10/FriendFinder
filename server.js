@@ -18,10 +18,10 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 
 /// issues with server.js and heroku link ///
-///check dependencies ///
+///check dependencies
 
-require('/src/routing/api-routes.js')(app);
-require('/src/routing/html-routes.js')(app); 
+require('./src/routing/api-routes')(app);
+require('./src/routing/api-routes')(app); 
 
 // Our Start Sever//
 app.listen(PORT, function() {
