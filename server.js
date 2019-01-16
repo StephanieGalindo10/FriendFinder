@@ -5,7 +5,7 @@ var path = require('path')
 
 var app = express();
 
-app.use(express.static(path.join(__dirname, '/src/public')));
+
 app.use('/', express.static('public'));
 
 //// local hostto connect to web ///
