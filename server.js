@@ -6,7 +6,7 @@ var path = require('path')
 var app = express();
 
 app.use(express.static(path.join(__dirname, '/src/public')));
-
+//// local hostto connect to web ///
 
 var PORT = process.env.PORT || 3000;
 console.log("In Server!!! ______")
@@ -17,8 +17,8 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({type:'application/vnd.api+json'}));
 
 
-// Sets up the Express App contuine// Routes information//
-// =============================================================//
+/// issues with server.js and heroku link ///
+///check dependencies ///
 
 require('/src/routing/api-routes.js')(app);
 require('/src/routing/html-routes.js')(app); 
