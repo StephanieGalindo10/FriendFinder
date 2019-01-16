@@ -4,13 +4,8 @@ var path = require('path')
 
 
 var app = express();
-
-
-app.use('/', express.static('public'));
-
-//// local hostto connect to web ///
-
 var PORT = process.env.PORT || 3000;
+
 console.log("In Server!!! ______")
 ///create a application//
 app.use(bodyParser.json());
