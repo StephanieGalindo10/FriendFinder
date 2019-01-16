@@ -23,6 +23,15 @@ app.use(bodyParser.json({type:'application/vnd.api+json'}));
 require('./src/routing/api-routes')(app);
 require('./src/routing/api-routes')(app); 
 
+let environment = process.env.NODE_ENV || 'development';
+
+if (environment === "production") {
+  app.use(express.static(`${__dirname}/../dist`));
+
+app.get('/*', (req, res) => {
+    res.sendFile(path.resolve(`${__dirname}/../dist/index.html`));
+  });
+
 // Our Start Sever//
 app.listen(PORT, function() {
 	console.log("App listening on PORT: " + PORT);
